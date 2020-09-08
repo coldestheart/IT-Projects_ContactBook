@@ -1,0 +1,37 @@
+@import '@/assets/styles/variables';
+.contact {
+  h3 {
+    color: $primary;
+  }
+  .contact-row {
+    width: 350px;
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .contact-board {
+      display: flex;
+      .contact-icon {
+        cursor: pointer;
+        padding: 0.2rem;
+        margin: 0.2rem;
+        width: 18px;
+        fill: $gray;
+      }
+      .icon-del {
+        transition: fill 0.2s ease-in;
+        &:hover {
+          fill: $secondary;
+          transition: fill 0.2s ease-out;
+        }
+      }
+      .icon-more {
+        transition: fill 0.2s ease-in;
+        &:hover {
+          fill: $primary;
+          transition: fill 0.2s ease-out;
+        }
+      }
+    }
+  }
+}
